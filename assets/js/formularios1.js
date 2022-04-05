@@ -55,6 +55,8 @@ function validarFormulario() {
     var formulario = document.getElementById("form")
     var nombre = document.getElementById("name");
     var email = document.getElementById("email");
+    var mensaje = document.GetElementById('Mensaje');
+
 
     // Validar con JavaScript que el campo “nombre” no esté vacío
     if (nombre.value == "") {
@@ -100,4 +102,20 @@ function validarFormulario() {
         alert("Formulario enviado");
         formulario.submit();
     }
+}
+
+else.if (mensaje.legth > 255){
+    alert ('El texto debe contener menos de 255 caracteres');
+    mensaje.focus ();
+    valido = false;
+}
+else.if (edad.value <18 || edad.value >120){
+    alert ('La edad no es válida');
+    edad.focus();
+
+}
+
+else.if (!expRegTfno.exec (tfno.value)){
+    alert("el numero de telefono no es válido");
+    
 }
